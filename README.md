@@ -6,7 +6,9 @@
 > Upload .nuxt directory to your server after runing `npm run build`, and then `pm2 start npm --name "ProjectName" -- run start`
 
 ## System Snapshots
-![image](https://raw.githubusercontent.com/VeryHandSomeBoy/mynuxt/master/static/StaffMange.png?token=AGUDWXO6ALKPQPW2BXPHYAK7IEMN6)
+![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/StaffMange.png)
+
+![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/StaffCreate.png)
 
 ## Build Setup
 
