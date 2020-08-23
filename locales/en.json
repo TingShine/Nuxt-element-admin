@@ -1,0 +1,56 @@
+{
+  "login": {
+    "title": "Admin System",
+    "account_text": "accountNo",
+    "pwd_text": "password",
+    "login_btn": "Login",
+    "forget_btn": "Forget password"
+  },
+  "home": {
+    "change-lang": "Swift Lanuage",
+    "nav1": "Staff Manager",
+    "nav2": "Client Manager",
+    "nav3": "Data Analyse",
+    "logout": "Login Out",
+    "title": "Admin System"
+  },
+  "staff": {
+    "manage": {
+      "accountNo": "accountNo",
+      "accPlacehold": "please input accountNo",
+        "userPlacehold": "please input name",
+      "userName": "userName",
+      "position": "position",
+      "posPlacehold": "All",
+      "search": "Search",
+      "mySub": "My Sub",
+      "create": "New",
+      "acc_table": "accountNo",
+      "user_table": "user",
+      "pos_table": "position",
+      "status_table": "status",
+      "op_table": "opration",
+      "re_table": "relation"
+    },
+    "create": {
+      "user": "userName",
+      "userPlacehold": "please input userName",
+      "accountNo": "accountNo",
+      "status": "status",
+      "sex": "sex",
+      "position": "position",
+      "posPlacehold": "please select position",
+      "pwd": "password",
+      "pwdPlacehold": "please input your password",
+      "pwd_again": "assert password",
+      "pwd_againPlacehold": "please input your password agagin",
+      "man": "Male",
+      "woman": "Female",
+      "submit_btn": "Submit",
+      "reset_btn": "Reset",
+      "countdown": "countdown",
+      "return": "Back",
+      "cancle": "Cancle Countdown"
+    }
+  }
+}

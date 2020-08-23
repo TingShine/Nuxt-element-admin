@@ -1,0 +1,56 @@
+{
+  "login": {
+    "title": "后台系统",
+    "account_text": "账号",
+    "pwd_text": "密码",
+    "login_btn": "登陆",
+    "forget_btn": "忘记密码"
+  },
+  "home": {
+    "change-lang": "切换语言",
+    "nav1": "职工管理",
+    "nav2": "客户管理",
+    "nav3": "数据统计",
+    "logout": "退出登陆",
+    "title": "后台系统"
+  },
+  "staff": {
+    "manage": {
+      "accountNo": "账号",
+      "accPlacehold": "请输入账号",
+      "userPlacehold": "请输入姓名",
+      "userName": "姓名",
+      "position": "职位",
+      "posPlacehold": "全部",
+      "search": "查询",
+      "mySub": "我的下属",
+      "create": "新建",
+      "acc_table": "账号",
+      "user_table": "姓名",
+      "pos_table": "职位",
+      "status_table": "状态",
+      "op_table": "操作",
+      "re_table": "从属关系"
+    },
+    "create": {
+      "user": "姓名",
+      "userPlacehold": "请输入姓名",
+      "accountNo": "账号",
+      "status": "状态",
+      "sex": "性别",
+      "position": "职位",
+      "posPlacehold": "请选择职位",
+      "pwd": "密码",
+      "pwdPlacehold": "请输入密码",
+      "pwd_again": "确认密码",
+      "pwd_againPlacehold": "请再次输入密码",
+      "man": "男",
+      "woman": "女",
+      "submit_btn": "提交",
+      "reset_btn": "重置",
+      "countdown": "倒计时",
+      "return": "返回",
+      "cancle": "取消计时"
+    }
+  }
+}
