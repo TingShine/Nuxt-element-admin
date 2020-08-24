@@ -62,9 +62,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ## Donation
 如果您觉得本项目对您有帮助，可以请作者喝一杯咖啡, 让开源走的更远，感谢支持。
 
-![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/wechat.png)
+![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/wechat.jpg)
 
-![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/alipay.png)
+![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/alipay.jpg)
 
 ## Mozilla Public License
 MIT
