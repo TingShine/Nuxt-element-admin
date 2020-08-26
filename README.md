@@ -1,6 +1,8 @@
-# mynuxt
+# Nuxt-element-admin
 
 * 本系统是一个通用的企业后台管理系统，拥有登陆、职工管理、客户管理和职工创建等功能，有较为美观的界面设计，系统基于Nuxt.js和element-UI实现，Nuxt.js是基于Vue的SSR框架，运行在服务端，能有较快的首屏速度和SEO优势。
+- 官方文档请访问：[官方文档](https://veryhandsomeboy.github.io/Nuxt-element-admin/)
+- 国内源请访问： [国内源](https://superting-shine.gitee.io/nuxt-element-admin/)
 
 * A admin-back framwork based on Nuxtjs 
 
@@ -14,20 +16,9 @@
 * mock模拟后台接口
 
 ## How to deploy in your server
-使用`npm run build`构建.nuxt目录，然后将.nuxt、/static和package.json打包到服务器的某个目录下面，运行`npm install`下载依赖，然后使用pm2部署该系统
+>  请访问官方文档指导
 
-> Upload .nuxt and /static directory and package.json to your server  
-(You can run `npm run build` and then get .nuxt directory)
-
-```bash
-# install dependencies
-$ npm install
-
-# start your website
-$ pm2 start npm --name "ProjectName" -- run start
-```
-
-## System Snapshots
+## Preview
 ![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/StaffMange.png)
 
 ![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/StaffCreate.png)
@@ -66,5 +57,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ![image](https://github.com/VeryHandSomeBoy/Nuxt-element-admin/blob/master/static/alipay.jpg)
 
-## Mozilla Public License
-MIT
+## License
+[MIT](LICENSE)
