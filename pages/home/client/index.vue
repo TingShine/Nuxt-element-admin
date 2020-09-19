@@ -14,6 +14,7 @@
             :type="scope.row.viewable ? 'primary' : 'info'"
             :underline="false"
             :disabled="!scope.row.viewable"
+            @click="$router.push({ path: '/home/client/info', query: { accountNo: scope.row.accountNo } })"
           >
             <i class="el-icon-view el-icon--left" v-if="scope.row.viewable"></i>
             {{ scope.row.accountNo }}
@@ -39,7 +40,8 @@
            </el-tooltip>
         </template>
         <template slot-scope="scope">
-          <el-link type="warning"
+          <el-link type="primary"
+          @click="$router.push({ path: '/home/client/relation', query: { accountNo: scope.row.accountNo } })"
             >{{ scope.row.nurse }}
             <i
               class="el-icon-edit el-icon--right"
@@ -55,7 +57,7 @@
           <el-button
             size="mini"
             type="warning"
-            @click="handleDelete(scope.$index, scope.row)"
+            @click="handleForm(scope.$index, scope.row)"
             >相关表单</el-button
           >
         </template>
@@ -156,6 +158,11 @@ export default {
     handleSub(index, row) {
       this.fetchSub(row.accountNo)
     },
+    handleForm(index, row) {
+      console.log(this.$store.state.client);
+      this.$store.commit('SET_CLIENT', row);
+      this.$router.push('/home/client/form');
+    }
   },
 }
 </script>

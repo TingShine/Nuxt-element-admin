@@ -17,15 +17,40 @@
 |- nuxt.config.js    # 系统配置文件
 ```
 
+## 开发部署
+- 开发模式下：
+```bash
+# 下载依赖
+$ npm install
+
+# 开发模式，默认监听3000端口
+$ npm run dev
+
+# Mock数据
+$ cd mock
+$ npm install
+$ node index.js  # 建议使用nodemon
+```
+- 部署：
+```bash
+# 打包生成.nuxt目录
+$ npm run build
+
+# 上传.nuxt, package.json和static目录到服务器新建到目录下(如果要mock数据将mock目录一起上传)
+$ npm install
+$ pm2 start npm --name "ProjectName" -- run start
+```
+
 ## 展示
 1. 登陆界面
-![login](/particles.png)
+<img :src="$withBase('/particles.png')" alt="login">
 
 2. 职工查询
-![StaffManage](/StaffMange.png)
+<img :src="$withBase('/StaffMange.png')" alt="StaffManage">
 
 3. 职工创建
-![SyaffCreate](/StaffCreate.png)
+<img :src="$withBase('/StaffCreate.png')" alt="SyaffCreate">
+
 
 ## 特色
 系统主要有以下几个功能特色：
@@ -83,14 +108,15 @@ export default ({ app, store }) => {
 
 使用了vue-particle组件，使用`npm i -S vue-particle`下载依赖，并在`nuxt.config.js`中引入
 
-![particles](/particles.png)
+<img :src="$withBase('/particles.png')" alt="particles">
+
 ::: warning 提醒
 如果最后要生成静态页面，需要在`nuxt.config.js`引入vue-particle时ssr设置为false
 使用的时候，需要在`<vue-particle />`外包裹`<no-ssr></no-ssr>`(在nuxt3之后将换成`<client-only></client-only>`)
 :::
 
 ### 面包屑页头
-![breadcrumb](/bread.png)  
+<img :src="$withBase('/bread.png')" alt="breadcrumb">
 
 middleware目录可以自定义各种中间件，在组件切换和路由变换时会自动调用，我们利用nuxt这个特性可实现获取当前路由，跟自定义的路由名称相匹配，形成路径列表，以下为`middleware/breadumb.js`中代码：
 ```js
@@ -167,5 +193,5 @@ Copyright (c) 2020 VeryHandSomeBoy
 
 ## 捐赠
 如果你觉得代码对你有用的话，可以请作者喝杯卡布奇诺，谢谢～  
-| ![alipay.jpg](/alipay.jpg) | ![wechat.jpg](/wechat.jpg) |
+| <img :src="$withBase('/alipay.jpg')" alt="alipay"> | <img :src="$withBase('/wechat.jpg')" alt="wechat"> |
 |:-|:-|

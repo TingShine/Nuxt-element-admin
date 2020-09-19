@@ -36,4 +36,18 @@ router.post('/position', (req, res) => {
   )
 })
 
+router.post('/img/upload', (req, res) => {
+  res.json({
+    "data": {
+      "img": "123123123"
+    },
+    "code": "00",
+    "msg": "成功访问"
+  });
+})
+
+router.all('/img/:id', (req, res) => {
+  res.send(Mock.Random.image('200x200', '#50B347', '#FFF', 'Mock.js'))
+})
+
 module.exports = router

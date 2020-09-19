@@ -24,7 +24,7 @@
         <el-button type="primary" icon="el-icon-user-solid" plain @click="$emit('mySub')">我的客户</el-button>
       </el-form-item>
       <el-form-item>
-        <el-button type="success" icon="el-icon-plus" @click="$router.push('/home/staff/create')">新建</el-button>
+        <el-button type="success" icon="el-icon-plus" @click="$router.push('/home/client/create')">新建</el-button>
       </el-form-item>
     </template>
   </BaseSearchBar>

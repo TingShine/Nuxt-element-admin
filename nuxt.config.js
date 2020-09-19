@@ -18,7 +18,7 @@ export default {
    */
   env: {
     baseUrl: process.env.NODE_ENV == 'production' ? '' : '',
-    apiUrl: '',
+    apiUrl: 'http://127.0.0.1:8090/mock',
     NUXT_ENV_API: '',
     version: process.env.npm_package_version || '2.1.0'
   },
@@ -50,6 +50,7 @@ export default {
     '~plugins/notify',
     '~plugins/axios',
     '~plugins/i18n',
+    '~plugins/downloadfile',
   ],
   /*
    ** Auto import components

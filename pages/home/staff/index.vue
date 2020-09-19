@@ -9,6 +9,7 @@
             :type="scope.row.viewable ? 'primary' : 'info'"
             :underline="false"
             :disabled="!scope.row.viewable"
+            @click="handleInfo(scope.row)"
           >
             <i class="el-icon-view el-icon--left" v-if="scope.row.viewable"></i>
             {{ scope.row.accountNo }}
@@ -27,7 +28,12 @@
           >
         </template>
       </el-table-column>
-      <el-table-column prop="superior" :label="$t('staff.manage.re_table')"> </el-table-column>
+      <el-table-column prop="superior" :label="$t('staff.manage.re_table')">
+        <template slot-scope="scope">  
+          <el-link type="primary" @click="$router.push({path: '/home/staff/subordinate', query: {accountNo: scope.row.accountNo, position: scope.row.position, userName: scope.row.userName, subordinateEditable: scope.row.subordinateEditable}})">
+            {{scope.row.superior}}<i class="el-icon-edit el-icon--left" v-if="scope.row.subordinateEditable"></i></el-link>
+        </template>  
+      </el-table-column>
       <el-table-column :label="$t('staff.manage.op_table')" width="250">
         <template slot-scope="scope">
           <el-button
@@ -139,6 +145,14 @@ export default {
     // 查找某人下属
     handleSub(index, row) {
       this.fetchSub(row.accountNo);
+    },
+    // 点击查看某人
+    handleInfo(row) {
+      if(!row.viewable) {
+        this.$error("您没有权限查看该职工信息");
+        return false;
+      }
+      this.$router.push({path: `/home/staff/info`,  query: {id: row.accountNo}})
     }
   },
 }

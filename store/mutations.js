@@ -17,9 +17,31 @@ export default {
       }
     })
   },
+  // 设置客户
+  SET_CLIENT(state, payload) {
+    console.log(payload);
+    const arr = Object.keys(payload)
+    arr.forEach((val) => {
+      if (state.client[`${val}`] != undefined) {
+        state.client[`${val}`] = payload[`${val}`]
+      }
+    })
+  },
+  State_Replace(state, payload) {
+    const arr = Object.keys(payload)
+    arr.forEach((val) => {
+      if (state[`${val}`] != undefined) {
+        state[`${val}`] = payload[`${val}`]
+      }
+    })
+  },
   // 设置面包屑
   setBreadcrumb(state, breadcrumbData) {
     state.breadcrumbData = breadcrumbData
+  },
+  // 设置token
+  setToken(state, token) {
+    state.token = token
   },
   // 通过路径匹配设置面包屑
   setBreadcrumbByPath(state, path) {
@@ -36,6 +58,7 @@ export default {
   },
   // 设置sate初始状态
   setStateAtStart(state) {
+    state.token = '';
     state.breadcrumbData = breadcrumbDatas;
   }
 }

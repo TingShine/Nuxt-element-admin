@@ -94,6 +94,7 @@ export default {
         })
         .then((res) => {
           this.$success('登陆成功');
+          this.$store.commit('setToken', res.token);
           // 获取当前用户信息
           this.$api.$post("/personal").then(data => {
             this.$store.commit("SET_INFO", data);
